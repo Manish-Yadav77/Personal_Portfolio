@@ -141,7 +141,7 @@ const Hero = () => {
         <SiTailwindcss className="text-blue-500 mx-2" />
         <DiNodejsSmall className="text-green-500 mx-2" />
         <DiMongodb className="text-green-500 mx-2" />
-        <SiExpress className="text-green-500 mx-2" />
+        <SiExpress className="text-[#303030] mx-2" />
       </motion.div>
 
       <div className="absolute inset-0 hidden md:block">
