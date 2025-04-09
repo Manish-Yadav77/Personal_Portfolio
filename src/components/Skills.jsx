@@ -13,7 +13,7 @@ import {
   DiTechcrunch,
 } from "react-icons/di"
 import Reveal from "./Reveal"
-import { SiTailwindcss } from 'react-icons/si';
+import { SiRedux, SiTailwindcss } from 'react-icons/si';
 
 const skills = [
     {
@@ -21,8 +21,8 @@ const skills = [
       technologies: [
         { name: 'HTML', icon: <DiHtml5 className='text-orange-600' /> },
         { name: 'CSS', icon: <DiCss3 className='text-blue-600' /> },
-        { name: 'Java', icon: <DiJava className='text-[#007396]' /> },
-        { name: 'Tailwind', icon: <SiTailwindcss className='text-purple-600' /> },
+        { name: 'Redux', icon: <SiRedux className='text-[#764abc]' /> },
+        { name: 'Tailwind', icon: <SiTailwindcss className='text-purple-700' /> },
         { name: 'JavaScript', icon: <DiJavascript1 className='text-yellow-500' /> },
         { name: 'React', icon: <DiReact className='text-blue-500' /> },
       ],
@@ -44,7 +44,7 @@ const Skills = () => {
         <Reveal>
         <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
         <p className="text-center mb-8">
-            I worked on various frontend and fullstack projects. Check them <a href="#" className="underline">there</a>.
+            I worked on various frontend and fullstack projects. Check them <a href="https://github.com/Manish-Yadav77" className="underline">there</a>.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8
