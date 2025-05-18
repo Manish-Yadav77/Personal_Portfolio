@@ -5,7 +5,7 @@ import Reveal from './Reveal'
 const experiences = [
     {
         company: 'Kodu - Powered by Dhurina',
-        period: '2025 - Present',
+        period: '2024 - Present',
         description: 'Currently enrolled in a 1-year Full Stack Development program, gaining hands-on experience with MERN stack, working on real-world projects, and sharpening skills in both frontend and backend technologies.',
       },
 ]
