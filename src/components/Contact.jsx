@@ -9,36 +9,33 @@ const Contact = () => {
         <Reveal>
         <div className="grid md:grid-cols-2 place-items-center">
             <div>
-                <div className="text-gray-300 my-3">
-                    <h3 className="text-3xl font-semibold mb-5">About <span>Me</span></h3>
-                    <p className="text-justify leading-7 w-11/12 mx-auto">
-                    I'm a passionate Full Stack Developer skilled in React.js, Node.js, Express.js, MongoDB, and Tailwind CSS, currently pursuing a one-year full stack course. With a foundation in C, C++, Java, HTML, CSS, and JavaScript, I’ve built projects like a weather app, to-do app, and currency converter. I enjoy problem-solving, debugging, and building clean, performance-optimized UIs. I'm a fast learner, team player, and open to full-time, part-time, or remote opportunities.
-                    </p>
-                </div>
+               <div className="text-gray-300 my-3">
+    <h3 className="text-3xl font-semibold mb-5">About <span>Me</span></h3>
+    <p className="text-justify leading-7 w-11/12 mx-auto">
+        I'm a Full Stack Web Developer with practical experience in React.js, Node.js, Express.js, MongoDB, and Tailwind CSS. Currently working at RC Gemini as a Frontend Developer, I've delivered several full stack projects and specialize in building clean, responsive, and scalable web applications. I enjoy problem-solving, writing efficient code, and collaborating in fast-paced environments. I'm always eager to learn and open to full-time or remote opportunities.
+    </p>
+</div>
+
+
+
 
                 <div className="flex mt-10 items-center gap-5">
-                    <div className="bg-gray-800/40 p-4 rounded-lg">
-                        <h3 className="md:text-3xl text-2xl font-semibold text-white">11
-                            <span>+</span>
-                        </h3>
-                        <p className="text-xs md:text-base"><span>Projects</span></p>
-                    </div>
+    <div className="bg-gray-800/40 p-4 rounded-lg">
+        <h3 className="md:text-3xl text-2xl font-semibold text-white">12<span>+</span></h3>
+        <p className="text-xs md:text-base"><span>Projects Completed</span></p>
+    </div>
 
-                    <div className="bg-gray-800/40 p-5 rounded-lg">
-                        <h3 className="md:text-3xl text-2xl font-semibold text-white">“Actively 
-                            <span></span>
-                        </h3>
-                        <p className="text-xs md:text-base"><span>improving”</span></p>
-                    </div>
+    <div className="bg-gray-800/40 p-5 rounded-lg">
+        <h3 className="md:text-3xl text-2xl font-semibold text-white">Full Stack</h3>
+        <p className="text-xs md:text-base"><span>Developer</span></p>
+    </div>
 
-                    <div className="bg-gray-800/40 p-5 rounded-lg">
-                        <h3 className="md:text-3xl text-2xl font-semibold text-white">Problem
-                            <span>-</span>
-                        </h3>
-                        <p className="text-xs md:text-base"><span>Solver</span></p>
-                    </div>
+    <div className="bg-gray-800/40 p-5 rounded-lg">
+        <h3 className="md:text-3xl text-2xl font-semibold text-white">Problem<span>-</span></h3>
+        <p className="text-xs md:text-base"><span>Solver</span></p>
+    </div>
+</div>
 
-                </div>
 
             </div>
 

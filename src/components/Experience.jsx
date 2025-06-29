@@ -4,13 +4,16 @@ import Reveal from './Reveal'
 
 const experiences = [
     {
+        company: 'RC Gemini',
+        period: 'April 2025 - Present',
+        description: 'Working as a Frontend Developer at RC Gemini, where I contribute to building modern, responsive, and scalable web applications. Although initially onboarded as a UI/UX-focused developer, I have leveraged my Full Stack Development background to successfully deliver multiple end-to-end projects using the MERN stack. I actively collaborate with cross-functional teams to integrate APIs, optimize performance, and ensure seamless user experiences from frontend design to backend functionality.',
+    },
+    {
         company: 'Kodu - Powered by Dhurina',
-        period: '2024 - Present',
+        period: '2024 - April 2025',
         description: 'Currently enrolled in a 1-year Full Stack Development program, gaining hands-on experience with MERN stack, working on real-world projects, and sharpening skills in both frontend and backend technologies.',
-      },
+    }
 ]
-
-
 
 const Experience = () => {
   return (
@@ -35,15 +38,11 @@ const Experience = () => {
                     <h2 className='text-gray-100 text-2xl font-semibold'>{experience.company}</h2>
                     <p className='text-gray-300'>{experience.period}</p>
                     <p className='text-gray-400 mt-4'>{experience.description}</p>
-
-
                 </motion.div>
                 </Reveal>
             ))}
 
         </motion.div>
-        
-
     </div>
   )
 }
