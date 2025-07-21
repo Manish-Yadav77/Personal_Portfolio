@@ -7,20 +7,42 @@ import project6 from "../assets/project6.png";
 import project7 from "../assets/project7.png";
 import project8 from "../assets/project8.png";
 import project9 from "../assets/project9.png";
+import project10 from "../assets/project10.png";
+import project11 from "../assets/project11.png";
 import { AiFillGithub, AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 
 const projects = [
   {
-  img: project9,
-  title: "Kanban Task Manager",
-  description:
-    "An internship project developed using a Kanban board system with drag-and-drop functionality. The app allows users to create, update, and manage tasks efficiently, with backend support to store user data persistently.",
-  links: {
-    site: "https://tasks-managerr.netlify.app",
-    github: "https://github.com/Manish-Yadav77/Task-Management-App",
+    title: "CRM - rcgemini.com",
+    img: project11,
+    description:
+      "An enterprise-level CRM built for internal company use. Admin can manage customers, employees, assign tasks, send emails, handle complaints, and track expenses. Fully synced task and complaint status with notifications and full reporting system.",
+    links: {
+      site: "https://rcgemini.com",
+      github: "#",
+    },
   },
-},
+  {
+    title: "WealthX",
+    img: project10,
+    description:
+      "A complete full-stack finance platform for users to buy plans, upload proof, and get admin approval. Admin can accept/reject and notify users. Built for a real client with both frontend and backend.",
+    links: {
+      site: "https://wealthx.live",
+      github: "#",
+    },
+  },
+  {
+    img: project9,
+    title: "Kanban Task Manager",
+    description:
+      "An internship project developed using a Kanban board system with drag-and-drop functionality. The app allows users to create, update, and manage tasks efficiently, with backend support to store user data persistently.",
+    links: {
+      site: "https://tasks-managerr.netlify.app",
+      github: "https://github.com/Manish-Yadav77/Task-Management-App",
+    },
+  },
   {
     img: project8,
     title: "Kodu Frontend",
@@ -85,7 +107,7 @@ const Portfolio = () => {
     <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
       <h2 className="text-3xl font-bold text-gray-200 mb-8">Portfolio</h2>
       {projects.map((project, index) => (
-        <Reveal>
+        <Reveal key={index}>
           <div
             key={index}
             className={`flex flex-col md:flex-row ${

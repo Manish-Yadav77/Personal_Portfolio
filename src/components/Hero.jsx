@@ -21,7 +21,13 @@ import {
   DiSass,
 } from "react-icons/di";
 import { motion } from "framer-motion";
-import { SiC, SiCplusplus, SiExpress, SiRedux, SiTailwindcss } from "react-icons/si";
+import {
+  SiC,
+  SiCplusplus,
+  SiExpress,
+  SiRedux,
+  SiTailwindcss,
+} from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -124,30 +130,30 @@ const Hero = () => {
       </div>
 
       <motion.div
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: true }}
-  transition={{ duration: 1, delay: 2 }}
-  className="flex flex-col md:flex-row text-4xl sm:text-5xl md:text-7xl px-6 sm:px-12 md:px-0 w-full justify-center items-center py-12 sm:py-16 md:py-24"
->
-  <p className="text-gray-200 mb-4 md:mb-0 md:mr-6 flex text-center md:text-left">
-    My Tech Stack
-  </p>
-  <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 justify-center md:justify-start lg:flex lg:flex-wrap">
-    <SiC className="text-[#A8B9CC] mx-auto" />
-    <SiCplusplus className="text-[#00599C] mx-auto" />
-    <DiJava className="text-[#007396] mx-auto" />
-    <DiHtml5 className="text-orange-600 mx-auto" />
-    <DiCss3 className="text-blue-600 mx-auto" />
-    <DiJavascript1 className="text-yellow-500 mx-auto" />
-    <DiReact className="text-blue-500 mx-auto" />
-    <SiTailwindcss className="text-purple-700 mx-auto" />
-    <DiNodejsSmall className="text-green-500 mx-auto" />
-    <SiRedux className="text-[#764abc] mx-auto" />
-    <DiMongodb className="text-green-500 mx-auto" />
-    <SiExpress className="text-[#303030] mx-auto" />
-  </div>
-</motion.div>
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 2 }}
+        className="flex flex-col md:flex-row text-4xl sm:text-5xl md:text-7xl px-6 sm:px-12 md:px-0 w-full justify-center items-center py-12 sm:py-16 md:py-24"
+      >
+        <p className="text-gray-200 mb-4 md:mb-0 md:mr-6 flex text-center md:text-left">
+          My Tech Stack
+        </p>
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 justify-center md:justify-start lg:flex lg:flex-wrap">
+          <SiC className="text-[#A8B9CC] mx-auto" />
+          <SiCplusplus className="text-[#00599C] mx-auto" />
+          <DiJava className="text-[#007396] mx-auto" />
+          <DiHtml5 className="text-orange-600 mx-auto" />
+          <DiCss3 className="text-blue-600 mx-auto" />
+          <DiJavascript1 className="text-yellow-500 mx-auto" />
+          <DiReact className="text-blue-500 mx-auto" />
+          <SiTailwindcss className="text-purple-700 mx-auto" />
+          <DiNodejsSmall className="text-green-500 mx-auto" />
+          <SiRedux className="text-[#764abc] mx-auto" />
+          <DiMongodb className="text-green-500 mx-auto" />
+          <SiExpress className="text-[#303030] mx-auto" />
+        </div>
+      </motion.div>
 
       <div className="absolute inset-0 hidden md:block">
         <ShinyEffect left={0} top={0} size={1400} />

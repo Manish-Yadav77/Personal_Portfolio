@@ -1,50 +1,51 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import Reveal from './Reveal'
+import React from "react";
+import { motion } from "framer-motion";
+import Reveal from "./Reveal";
 
-const experiences = [
-    {
-        company: 'RC Gemini',
-        period: 'April 2025 - Present',
-        description: 'Working as a Frontend Developer at RC Gemini, where I contribute to building modern, responsive, and scalable web applications. Although initially onboarded as a UI/UX-focused developer, I have leveraged my Full Stack Development background to successfully deliver multiple end-to-end projects using the MERN stack. I actively collaborate with cross-functional teams to integrate APIs, optimize performance, and ensure seamless user experiences from frontend design to backend functionality.',
-    },
-    {
-        company: 'Kodu - Powered by Dhurina',
-        period: '2024 - April 2025',
-        description: 'Currently enrolled in a 1-year Full Stack Development program, gaining hands-on experience with MERN stack, working on real-world projects, and sharpening skills in both frontend and backend technologies.',
-    }
-]
+const experiences = [    
+  {
+    company: "RC Gemini",
+    period: "April 2025 - July 2025",
+    description:
+      "Worked as a Frontend Developer at RC Gemini, contributing to modern, responsive, and scalable web applications. Although initially onboarded as a UI/UX-focused developer, I leveraged my Full Stack Development background to deliver multiple end-to-end projects using the MERN stack. Collaborated with cross-functional teams to integrate APIs, optimize performance, and ensure seamless user experiences from frontend design to backend functionality.",
+  },
+  {
+    company: "Kodu - Powered by Dhurina",
+    period: "2024 - April 2025",
+    description:
+      "Currently enrolled in a 1-year Full Stack Development program, gaining hands-on experience with MERN stack, working on real-world projects, and sharpening skills in both frontend and backend technologies.",
+  },
+];
 
 const Experience = () => {
   return (
-    <div className='p-8 max-w-[600px] mx-auto'>
-        <h1 className='text-4xl text-gray-200 font-bold text-center mb-12'>Experience</h1>
-        <motion.div
-        className='space-y-8'
-        initial="hidden"
-        animate="visible"
-        >
-            {experiences.map((experience, index) => (
-                <Reveal>
-                <motion.div
-                    key={index}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false, amount: 0.3}}
-                    transition={{ duration: 1}}
-                    className=' border border-purple-600 p-6 rounded-lg shadow-md
-                    hover:shadow-xl transition-shadow duration-300 bg-purple-700/10'
-                >
-                    <h2 className='text-gray-100 text-2xl font-semibold'>{experience.company}</h2>
-                    <p className='text-gray-300'>{experience.period}</p>
-                    <p className='text-gray-400 mt-4'>{experience.description}</p>
-                </motion.div>
-                </Reveal>
-            ))}
-
-        </motion.div>
+    <div className="p-8 max-w-[600px] mx-auto">
+      <h1 className="text-4xl text-gray-200 font-bold text-center mb-12">
+        Experience
+      </h1>
+      <motion.div className="space-y-8" initial="hidden" animate="visible">
+        {experiences.map((experience, index) => (
+          <Reveal key={index}>
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 1 }}
+              className=" border border-purple-600 p-6 rounded-lg shadow-md
+                    hover:shadow-xl transition-shadow duration-300 bg-purple-700/10"
+            >
+              <h2 className="text-gray-100 text-2xl font-semibold">
+                {experience.company}
+              </h2>
+              <p className="text-gray-300">{experience.period}</p>
+              <p className="text-gray-400 mt-4">{experience.description}</p>
+            </motion.div>
+          </Reveal>
+        ))}
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
