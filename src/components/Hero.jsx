@@ -82,7 +82,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex flex-row items-center gap-6 my-4 md:mb-0"
           >
-            <a href="../../src/ManishCV.pdf"download>
+            <a href="../ManishCV.pdf" download>
               <motion.button
                 whileHover={{
                   scale: 1.05,
