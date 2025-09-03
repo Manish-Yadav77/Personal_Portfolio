@@ -37,7 +37,7 @@ const Navbar = () => {
         className="max-w-[1300px] mx-auto  flex justify-between text-gray-200
         text-xl items-center px-12 h-20"
       >
-        <a href="https://www.linkedin.com/in/manish-kumar-yadav-697254312/">
+        <a href="https://www.linkedin.com/in/manish-yadav-fullstack-mern/">
           Manish Kumar Yadav
         </a>
 
