@@ -5,16 +5,16 @@ import Reveal from "./Reveal";
 const experiences = [    
   {
     company: "RC Gemini",
-    period: "April 2025 - July 2025",
+    period: "April 2025 - Present",
     description:
-      "Worked as a Frontend Developer at RC Gemini, contributing to modern, responsive, and scalable web applications. Although initially onboarded as a UI/UX-focused developer, I leveraged my Full Stack Development background to deliver multiple end-to-end projects using the MERN stack. Collaborated with cross-functional teams to integrate APIs, optimize performance, and ensure seamless user experiences from frontend design to backend functionality.",
+      "Working as a Frontend Developer at RC Gemini, contributing to modern, responsive, and scalable web applications. Although initially onboarded as a UI/UX-focused developer, I leveraged my Full Stack Development background to deliver multiple end-to-end projects using the MERN stack. Collaborated with cross-functional teams to integrate APIs, optimize performance, and ensure seamless user experiences from frontend design to backend functionality.",
   },
   {
-    company: "Kodu - Powered by Dhurina",
-    period: "2024 - April 2025",
-    description:
-      "Currently enrolled in a 1-year Full Stack Development program, gaining hands-on experience with MERN stack, working on real-world projects, and sharpening skills in both frontend and backend technologies.",
-  },
+  company: "Kodu - Powered by Dhurina",
+  period: "Jan 2024 - April 2025",
+  description:
+    "Completed a 1-year Full Stack Development program with a 3-month internship, building MERN stack projects and gaining hands-on experience in frontend, backend, and deployment."
+},
 ];
 
 const Experience = () => {
