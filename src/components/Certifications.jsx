@@ -23,7 +23,7 @@ const certifications = [
     icon: <SiOracle size={40} />,
     color: "from-red-500 to-orange-600",
     verified: true,
-    credentialLink: "#",
+    credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=35E4718E72EB34E1B4BC8D672A79C3ECFBDAFD90CC0471210E83146A545539AE",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const certifications = [
     icon: <BiAward size={40} />,
     color: "from-green-500 to-emerald-600",
     verified: true,
-    credentialLink: "#",
+    credentialLink: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_iTj4YEJRG6d3yXY6Q_1756885455100_completion_certificate.pdf",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const certifications = [
     icon: <FaAward size={40} />,
     color: "from-blue-500 to-cyan-600",
     verified: true,
-    credentialLink: "#",
+    credentialLink: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_iTj4YEJRG6d3yXY6Q_1756486938090_completion_certificate.pdf",
   },
   {
     id: 4,
