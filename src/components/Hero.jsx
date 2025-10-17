@@ -80,7 +80,7 @@ const Hero = ({ id }) => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex flex-col sm:flex-row gap-6"
           >
-            <a href="../../src/ManishCV.pdf" download>
+            <a href="/ManishCV.pdf" download>
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0px 0px 10px rgba(128,0,128,0.4)" }}
                 className="px-6 py-3 rounded-xl font-semibold bg-purple-600 text-gray-100"
