@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1068);
 
   const toggleNav = () => setNav(!nav);
   const closeNav = () => setNav(false);
 
   // Detect screen resize and update
   useEffect(() => {
-    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    const handleResize = () => setIsDesktop(window.innerWidth >= 1068);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -48,13 +48,28 @@ const Navbar = () => {
           }}
         >
           <li>
-            <Link to="skills" smooth offset={50} duration={500}>
+            <Link to="hero" smooth offset={50} duration={500}>
               About
+            </Link>
+          </li>
+          <li>
+            <Link to="skills" smooth offset={50} duration={500}>
+              Skills
             </Link>
           </li>
           <li>
             <Link to="portfolio" smooth offset={50} duration={500}>
               Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link to="experience" smooth offset={50} duration={500}>
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link to="certifications" smooth offset={50} duration={500}>
+              certifications
             </Link>
           </li>
           <li>
@@ -89,13 +104,28 @@ const Navbar = () => {
         >
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center text-gray-200">
             <li>
-              <Link to="skills" onClick={closeNav} smooth offset={50} duration={500}>
+              <Link to="hero" onClick={closeNav} smooth offset={50} duration={500}>
                 About
+              </Link>
+            </li>
+            <li>
+              <Link to="skills" onClick={closeNav} smooth offset={50} duration={500}>
+                Skills
               </Link>
             </li>
             <li>
               <Link to="portfolio" onClick={closeNav} smooth offset={50} duration={500}>
                 Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="experience" onClick={closeNav} smooth offset={50} duration={500}>
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link to="certifications" onClick={closeNav} smooth offset={50} duration={500}>
+                Certifications
               </Link>
             </li>
             <li>
