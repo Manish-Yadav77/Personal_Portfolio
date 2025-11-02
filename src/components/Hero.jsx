@@ -93,7 +93,7 @@ const Hero = ({ id }) => {
               <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Manish-Yadav77">
                 <AiOutlineGithub />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/manish-kumar-yadav-697254312/">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/manish-yadav-fullstack-mern/">
                 <AiOutlineLinkedin />
               </motion.a>
               <motion.a whileHover={{ scale: 1.2 }} href="https://instagram.com/manish_yadav77">

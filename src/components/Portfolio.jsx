@@ -12,15 +12,16 @@ import project8 from "../assets/project8.png";
 import project9 from "../assets/project9.png";
 import project10 from "../assets/project10.png";
 import project11 from "../assets/project11.png";
+import project12 from "../assets/project12.png";
 
 const projects = [
   {
     id: 1,
-    title: "CRM - rcgemini.com",
+    title: "CRM",
     description:
-      "An enterprise-level CRM built for internal company use. Admin can manage customers, employees, assign tasks, send emails, handle complaints, and track expenses with a reporting system.",
+      "An enterprise-grade CRM platform for managing customers, employees, tasks, and finances with analytics, automation, and role-based access.",
     img: project11,
-    tech: ["React", "Node.js", "MongoDB", "Express"],
+    tech: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "JWT Authentication"],
     site: "https://rcgemini.com",
     github: "#",
   },
@@ -28,9 +29,9 @@ const projects = [
     id: 2,
     title: "WealthX",
     description:
-      "A complete full-stack finance platform for users to buy plans, upload proof, and get admin approval. Built for a real client with both frontend and backend integration.",
+      "A secure finance management system that lets users buy plans, upload proofs, and get real-time admin verification with full-stack integration.",
     img: project10,
-    tech: ["React", "Node.js", "Express", "MongoDB"],
+    tech: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "JWT Authentication"],
     site: "https://wealthx.live",
     github: "#",
   },
@@ -38,9 +39,9 @@ const projects = [
     id: 3,
     title: "Kanban Task Manager",
     description:
-      "A drag-and-drop task management app with backend persistence, allowing users to create, update, and track tasks efficiently.",
+      "A drag-and-drop productivity app for managing daily tasks with backend persistence, analytics, and a seamless user interface.",
     img: project9,
-    tech: ["React", "Node.js", "Express", "MongoDB"],
+    tech: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
     site: "https://tasks-managerr.netlify.app",
     github: "https://github.com/Manish-Yadav77/Task-Management-App",
   },
@@ -48,45 +49,47 @@ const projects = [
     id: 4,
     title: "Kodu Frontend",
     description:
-      "A real-world, production-ready UI built for Kodu. Developed for marketing and advertising campaigns and used in production.",
+      "A responsive, production-ready marketing UI for Kodu campaigns focused on performance, scalability, and modern design principles.",
     img: project8,
-    tech: ["React", "TailwindCSS"],
+    tech: ["React.js", "TailwindCSS"],
     site: "https://koducoding.netlify.app",
     github: "https://github.com/Manish-Yadav77/FrontendKodu",
   },
   {
     id: 5,
+    title: "Infinity Chat",
+    description:
+      "A full-stack AI chatbot inspired by ChatGPT, featuring Gemini API integration, authentication, chat history, and a modern responsive interface.",
+    img: project12,
+    tech: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Google Gemini API"],
+    site: "https://infinitychat7.netlify.app/",
+    github: "https://github.com/Manish-Yadav77/InfinityChat",
+  },
+  {
+    id: 6,
     title: "Weather App",
     description:
-      "Weather forecast application built with React and external API integration.",
+      "A clean and elegant weather forecast app fetching live data via API with a fully responsive React UI.",
     img: project1,
-    tech: ["React", "API", "CSS"],
+    tech: ["React.js", "API", "CSS"],
     site: "https://appsweathers.netlify.app/",
     github: "https://github.com/Manish-Yadav77/Weather-App",
   },
   {
-    id: 6,
+    id: 7,
     title: "Todo App",
-    description: "A simple, responsive to-do app built with React and Hooks.",
+    description:
+      "A minimalistic and responsive task tracker built with React Hooks and TailwindCSS for efficient daily planning.",
     img: project2,
-    tech: ["React", "TailwindCSS"],
+    tech: ["React.js", "TailwindCSS"],
     site: "https://appstodoos.netlify.app/",
     github: "https://github.com/Manish-Yadav77/Todo-App",
-  },
-  {
-    id: 7,
-    title: "Simple Calculator",
-    description: "A simple calculator made using HTML, CSS, and JavaScript.",
-    img: project4,
-    tech: ["HTML", "CSS", "JavaScript"],
-    site: "https://simplestcalkulators.netlify.app/",
-    github: "https://github.com/Manish-Yadav77/Simple-Calculator",
   },
   {
     id: 8,
     title: "BMI Calculator",
     description:
-      "A clean, responsive BMI calculator app built with JavaScript.",
+      "An interactive BMI calculator that instantly computes and displays health metrics with clean responsive design.",
     img: project5,
     tech: ["HTML", "CSS", "JavaScript"],
     site: "https://bmikalculator.netlify.app/",
@@ -96,7 +99,7 @@ const projects = [
     id: 9,
     title: "Quotes Generator",
     description:
-      "A simple quotes generator app made with HTML, CSS, and JavaScript.",
+      "A lightweight and dynamic quote generator that displays random motivational quotes using JavaScript and clean UI.",
     img: project6,
     tech: ["HTML", "CSS", "JavaScript"],
     site: "https://generatorsquotess.netlify.app/",
@@ -104,7 +107,7 @@ const projects = [
   },
 ];
 
-const Portfolio = ({id}) => {
+const Portfolio = ({ id }) => {
   return (
     <div className="max-w-[1300px] mx-auto p-6 md:p-20 min-h-screen" id={id}>
       <Reveal>
@@ -144,7 +147,7 @@ const Portfolio = ({id}) => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 relative z-10 pointer-events-auto">
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors leading-tight">
                   {project.title}
                 </h3>
@@ -165,13 +168,13 @@ const Portfolio = ({id}) => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3">
+                <div className="flex gap-3 pointer-events-auto">
                   {project.site && (
                     <a
                       href={project.site}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded-md hover:bg-purple-700 transition-all hover:scale-105"
+                      className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded-md hover:bg-purple-700 transition-all hover:scale-105 cursor-pointer"
                     >
                       <AiOutlineLink size={16} /> Visit
                     </a>
@@ -181,7 +184,7 @@ const Portfolio = ({id}) => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white text-sm font-semibold rounded-md hover:bg-gray-600 transition-all hover:scale-105"
+                      className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white text-sm font-semibold rounded-md hover:bg-gray-600 transition-all hover:scale-105 cursor-pointer"
                     >
                       <AiOutlineGithub size={16} /> Code
                     </a>
@@ -190,7 +193,7 @@ const Portfolio = ({id}) => {
               </div>
 
               {/* Hover Border */}
-              <div className="absolute inset-0 border-2 border-transparent rounded-2xl group-hover:border-purple-500 transition-all duration-300" />
+              <div className="absolute inset-0 border-2 border-transparent rounded-2xl group-hover:border-purple-500 transition-all duration-300 pointer-events-none" />
 
               {/* Shine Effect */}
               <motion.div
