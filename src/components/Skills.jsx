@@ -1,6 +1,6 @@
 import React from "react";
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiJava, DiGithubBadge } from "react-icons/di";
-import { SiRedux, SiTailwindcss, SiC, SiCplusplus, SiExpress } from "react-icons/si";
+import { SiRedux, SiTailwindcss, SiC, SiCplusplus, SiExpress, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
@@ -11,7 +11,9 @@ const skills = [
       { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
       { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
       { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+      { name: "React.js", icon: <DiReact className="text-blue-500" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
       { name: "Redux", icon: <SiRedux className="text-[#764abc]" /> },
       { name: "Tailwind", icon: <SiTailwindcss className="text-purple-700" /> },
     ],

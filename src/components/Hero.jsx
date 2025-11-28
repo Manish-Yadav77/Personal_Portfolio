@@ -16,7 +16,7 @@ import {
   DiMongodb,
   DiJava,
 } from "react-icons/di";
-import { SiC, SiCplusplus, SiRedux, SiTailwindcss, SiExpress } from "react-icons/si";
+import { SiC, SiCplusplus, SiRedux, SiTailwindcss, SiExpress, SiTypescript, SiNextdotjs } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Hero = ({ id }) => {
@@ -27,7 +27,9 @@ const Hero = ({ id }) => {
     { icon: <DiHtml5 className="text-orange-600" />, name: "HTML" },
     { icon: <DiCss3 className="text-blue-600" />, name: "CSS" },
     { icon: <DiJavascript1 className="text-yellow-500" />, name: "JS" },
-    { icon: <DiReact className="text-blue-500" />, name: "React" },
+    { icon: <SiTypescript className="text-blue-600" />, name: "TS" },
+    { icon: <DiReact className="text-blue-500" />, name: "React.js" },
+    { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
     { icon: <SiTailwindcss className="text-purple-700" />, name: "Tailwind" },
     { icon: <DiNodejsSmall className="text-green-500" />, name: "Node.js" },
     { icon: <SiRedux className="text-[#764abc]" />, name: "Redux" },

@@ -13,6 +13,7 @@ import project9 from "../assets/project9.png";
 import project10 from "../assets/project10.png";
 import project11 from "../assets/project11.png";
 import project12 from "../assets/project12.png";
+import project13 from "../assets/project13.png";
 
 const projects = [
   {
@@ -57,6 +58,16 @@ const projects = [
   },
   {
     id: 5,
+    title: "Coding-Class Next.js",
+    description:
+      "A simple learning platform built as my first Next.js project. I learned Next.js, TypeScript, and Aceternity UI while creating pages for Home, Courses, and Contact.",
+    img: project13,
+    tech: ["Next.js", "TailwindCSS", "TypeScript",  "Aceternity UI"],
+    site: "https://coding-clas.netlify.app/",
+    github: "https://github.com/Manish-Yadav77/Coding-Classes-next.js",
+  },
+  {
+    id: 6,
     title: "Infinity Chat",
     description:
       "A full-stack AI chatbot inspired by ChatGPT, featuring Gemini API integration, authentication, chat history, and a modern responsive interface.",
@@ -66,7 +77,7 @@ const projects = [
     github: "https://github.com/Manish-Yadav77/InfinityChat",
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather App",
     description:
       "A clean and elegant weather forecast app fetching live data via API with a fully responsive React UI.",
@@ -76,7 +87,7 @@ const projects = [
     github: "https://github.com/Manish-Yadav77/Weather-App",
   },
   {
-    id: 7,
+    id: 8,
     title: "Todo App",
     description:
       "A minimalistic and responsive task tracker built with React Hooks and TailwindCSS for efficient daily planning.",
@@ -86,7 +97,7 @@ const projects = [
     github: "https://github.com/Manish-Yadav77/Todo-App",
   },
   {
-    id: 8,
+    id: 9,
     title: "BMI Calculator",
     description:
       "An interactive BMI calculator that instantly computes and displays health metrics with clean responsive design.",
@@ -96,7 +107,7 @@ const projects = [
     github: "https://github.com/Manish-Yadav77/Bmi-calculator",
   },
   {
-    id: 9,
+    id: 10,
     title: "Quotes Generator",
     description:
       "A lightweight and dynamic quote generator that displays random motivational quotes using JavaScript and clean UI.",
