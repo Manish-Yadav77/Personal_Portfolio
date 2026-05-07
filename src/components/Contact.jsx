@@ -15,8 +15,8 @@ const Toast = ({ message, type, onClose }) => {
     type === "success"
       ? "from-green-500/90 to-green-700/90"
       : type === "error"
-      ? "from-red-500/90 to-red-700/90"
-      : "from-yellow-500/90 to-yellow-700/90";
+        ? "from-red-500/90 to-red-700/90"
+        : "from-yellow-500/90 to-yellow-700/90";
 
   const icon =
     type === "success" ? "✅" : type === "error" ? "❌" : "⚠️";
@@ -156,14 +156,7 @@ const Contact = ({ id }) => {
                   About <span className="text-purple-400">Me</span>
                 </h3>
                 <p className="text-gray-400 leading-relaxed md:text-lg text-justify">
-                  I'm a Full Stack Web Developer with practical experience in
-                  React.js, Node.js, Express.js, MongoDB, and Tailwind CSS.
-                  Previously worked at RC Gemini as a Frontend Developer, where
-                  I delivered several full stack projects and specialized in
-                  building clean, responsive, and scalable web applications. I
-                  enjoy problem-solving, writing efficient code, and
-                  collaborating in fast-paced environments. I'm always eager to
-                  learn and open to full-time or remote opportunities.
+                  Full Stack MERN Developer with experience, building scalable SaaS platforms, business automation systems, AI-integrated applications, and production-ready web solutions using React.js, Next.js, Node.js, Express.js, MongoDB, and TypeScript. Worked on real-world CRM, finance, AI chatbot, and pharmacy management systems with focus on performance, responsive UI architecture, API integration, and modern user experience.
                 </p>
               </div>
 

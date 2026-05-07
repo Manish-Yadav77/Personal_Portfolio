@@ -13,7 +13,7 @@ const experiences = [
     company: "Kodu - Powered by Dhurina",
     period: "2024 - April 2025",
     description:
-      "Currently enrolled in a 1-year Full Stack Development program, gaining hands-on experience with MERN stack, working on real-world projects, and sharpening skills in both frontend and backend technologies.",
+      "Completed an intensive Full Stack Development program focused on MERN stack architecture, scalable frontend systems, backend APIs, authentication workflows, and real-world application development using React.js, Node.js, Express.js, MongoDB, and TypeScript.",
   },
 ];
 

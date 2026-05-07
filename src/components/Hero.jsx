@@ -48,7 +48,14 @@ const Hero = ({ id }) => {
           transition={{ duration: 1 }}
         >
           <TypeAnimation
-            sequence={["Fullstack Dev", 1000, "Frontend Dev", 1000, "Backend Dev", 1000]}
+            sequence={[
+              "Full Stack MERN Developer",
+              1000,
+              "React & Next.js Developer",
+              1000,
+              "Backend & SaaS Builder",
+              1000,
+            ]}
             speed={50}
             repeat={Infinity}
             className="font-bold text-purple-400 text-xl md:text-4xl mb-4"
@@ -71,7 +78,7 @@ const Hero = ({ id }) => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 md:text-xl text-base mb-6 max-w-xl"
           >
-            "Aspiring full stack developer, building skills through hands-on projects and continuous learning."
+            Full Stack MERN Developer focused on building scalable SaaS applications, AI-powered tools, and modern web platforms with real-world business workflows, performance optimization, and production-ready architecture.
           </motion.p>
 
           {/* Buttons */}
@@ -95,13 +102,28 @@ const Hero = ({ id }) => {
             </a>
 
             <div className="flex gap-6 text-4xl md:text-5xl text-purple-400">
-              <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Manish-Yadav77">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://github.com/Manish-Yadav77"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiOutlineGithub />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/manish-yadav-fullstack-mern/">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://www.linkedin.com/in/manish-yadav-fullstack-mern/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiOutlineLinkedin />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} href="https://instagram.com/manish_yadav77">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://instagram.com/manish_yadav77"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiOutlineInstagram />
               </motion.a>
             </div>

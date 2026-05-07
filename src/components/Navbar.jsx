@@ -69,7 +69,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="certifications" smooth offset={50} duration={500}>
-              certifications
+              Certifications
             </Link>
           </li>
           <li>

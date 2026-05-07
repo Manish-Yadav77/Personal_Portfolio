@@ -4,10 +4,8 @@ import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
-import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
-import project7 from "../assets/project7.png";
 import project8 from "../assets/project8.png";
 import project9 from "../assets/project9.png";
 import project10 from "../assets/project10.png";
@@ -17,27 +15,27 @@ import project13 from "../assets/project13.png";
 import projectPharma from "../assets/projectPharma.png";
 
 const projects = [
-  // ⭐ FEATURED PROJECT — PharmaSaaS (Always #1)
+  // ⭐ FEATURED PROJECT — BillPharma (Always #1)
   {
-  id: 0,
-  title: "BillPharma — AI Powered Pharmacy Management SaaS",
-  description:
-    "A production-grade multi-tenant pharmacy management platform built for modern medical stores and retail pharmacy chains. BillPharma handles GST-compliant billing, inventory & batch tracking, expiry alerts, profit/loss analytics, staff management, role-based access, offline-first invoice generation, and AI-assisted inventory forecasting. Designed with Indian pharmacy compliance in mind, including pharmacist validation, drug-license enforcement, FEFO inventory flow, and scalable SaaS architecture. Built end-to-end independently using a full MERN + TypeScript stack.",
-  img: projectPharma,
-  tech: [
-    "TypeScript",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Tailwind CSS",
-    "AI Integration",
-    "Service Workers",
-  ],
-  site: "https://billpharma.netlify.app",
-  github: "#", // Replace with actual GitHub link if public
-  featured: true,
-},
+    id: 0,
+    title: "BillPharma — AI Powered Pharmacy Management SaaS",
+    description:
+      "A production-grade multi-tenant pharmacy management platform built for modern medical stores and retail pharmacy chains. BillPharma handles GST-compliant billing, inventory & batch tracking, expiry alerts, profit/loss analytics, staff management, role-based access, offline-first invoice generation, and AI-assisted inventory forecasting. Designed with Indian pharmacy compliance in mind, including pharmacist validation, drug-license enforcement, FEFO inventory flow, and scalable SaaS architecture. Built end-to-end independently using a full MERN + TypeScript stack.",
+    img: projectPharma,
+    tech: [
+      "TypeScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "AI Integration",
+      "Service Workers",
+    ],
+    site: "https://billpharma.netlify.app",
+    github: "#", // Replace with actual GitHub link if public
+    featured: true,
+  },
   {
     id: 1,
     title: "CRM System",

@@ -70,7 +70,7 @@ const certifications = [
     issuer: "Kodu - Powered by Dhurina",
     date: "January 2025 - April 2025",
     description:
-      "Built interactive UIs and modular components, achieved 20% increase in user engagement and 30% reduction in development time",
+      "Worked on frontend and full stack application development, reusable UI components, API integration, and responsive web interfaces in collaborative development environments.",
     type: "certificate",
     icon: <SiMongodb size={40} />,
     color: "from-green-600 to-teal-600",
@@ -95,7 +95,7 @@ const certifications = [
     issuer: "RC Gemini",
     date: "May 2025",
     description:
-      "Awarded for engineering production CRM and achieving 30%+ improvement in workflow efficiency",
+      "Recognized for contribution to CRM development, frontend engineering, and scalable business workflow implementation.",
     type: "badge",
     icon: <BiBadgeCheck size={40} />,
     color: "from-indigo-500 to-purple-600",
