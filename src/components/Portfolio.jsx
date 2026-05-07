@@ -19,25 +19,25 @@ import projectPharma from "../assets/projectPharma.png";
 const projects = [
   // ⭐ FEATURED PROJECT — PharmaSaaS (Always #1)
   {
-    id: 0,
-    title: "RPharmaSaaS — Pharmacy Management Platform",
-    description:
-      "A production-grade multi-tenant SaaS platform for pharmacy operations featuring inventory control, billing generation, GST compliance, taxation logic, profit/loss analytics, offline-first billing, and AI-powered inventory forecasting. Built solo from concept to deployment.",
-    img: projectPharma,
-    tech: [
-      "TypeScript",
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "AI Integration",
-      "Service Workers",
-    ],
-    site: "https://storepharma.netlify.app",
-    github: "#", // Replace with actual GitHub link if public
-    featured: true,
-  },
+  id: 0,
+  title: "BillPharma — AI Powered Pharmacy Management SaaS",
+  description:
+    "A production-grade multi-tenant pharmacy management platform built for modern medical stores and retail pharmacy chains. BillPharma handles GST-compliant billing, inventory & batch tracking, expiry alerts, profit/loss analytics, staff management, role-based access, offline-first invoice generation, and AI-assisted inventory forecasting. Designed with Indian pharmacy compliance in mind, including pharmacist validation, drug-license enforcement, FEFO inventory flow, and scalable SaaS architecture. Built end-to-end independently using a full MERN + TypeScript stack.",
+  img: projectPharma,
+  tech: [
+    "TypeScript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "AI Integration",
+    "Service Workers",
+  ],
+  site: "https://billpharma.netlify.app",
+  github: "#", // Replace with actual GitHub link if public
+  featured: true,
+},
   {
     id: 1,
     title: "CRM System",
