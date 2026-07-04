@@ -1,6 +1,6 @@
 import React from "react";
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiJava, DiGithubBadge } from "react-icons/di";
-import { SiRedux, SiTailwindcss, SiC, SiCplusplus, SiExpress, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiRedux, SiTailwindcss, SiC, SiCplusplus, SiExpress, SiNextdotjs, SiTypescript, SiPostgresql, SiDocker, SiPostman, SiGit, SiJsonwebtokens } from "react-icons/si";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
@@ -19,16 +19,25 @@ const skills = [
     ],
   },
   {
-    category: "Fullstack",
+    category: "Backend & Databases",
     technologies: [
       { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" /> },
-      { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
       { name: "Express", icon: <SiExpress className="text-gray-400" /> },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
-      { name: "GitHub", icon: <DiGithubBadge className="text-gray-400" /> },
+      { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
+      { name: "JWT Auth", icon: <SiJsonwebtokens className="text-pink-500" /> },
       { name: "Java", icon: <DiJava className="text-[#007396]" /> },
       { name: "C", icon: <SiC className="text-[#A8B9CC]" /> },
       { name: "C++", icon: <SiCplusplus className="text-[#00599C]" /> },
+    ],
+  },
+  {
+    category: "Tools & DevOps",
+    technologies: [
+      { name: "Git", icon: <SiGit className="text-orange-500" /> },
+      { name: "GitHub", icon: <DiGithubBadge className="text-gray-400" /> },
+      { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
+      { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
     ],
   },
 ];

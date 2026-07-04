@@ -4,6 +4,8 @@ import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
+import project3 from "../assets/Dubai_Deck.png";
+import project4 from "../assets/Medcare_Pharmacy_Website.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
 import project8 from "../assets/project8.png";
@@ -36,8 +38,47 @@ const projects = [
     github: "#", // Replace with actual GitHub link if public
     featured: true,
   },
+
+  // 🆕 COMPANY WORK — 3D Interactive Frontend (job task project)
   {
     id: 1,
+    title: "Dubai Deck — 3D Interactive Landing Experience",
+    description:
+      "A visually immersive 3D-inspired frontend experience featuring modern UI/UX, smooth animations, responsive layouts, and interactive design. Built with a focus on clean architecture, performance optimization, and delivering a premium user experience across devices.",
+    img: project3,
+    tech: ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "Framer Motion"],
+    site: "https://dubaideck.netlify.app/",
+    github: "https://github.com/Manish-Yadav77/DubaiMall_ImmersiveSalesExperience",
+    featured: false,
+  },
+
+  // 🆕 COMPANY WORK — Pharmacy Website (separate from BillPharma SaaS)
+  {
+    id: 2,
+    title: "Pharmacy Website — Business Landing & Catalog",
+    description:
+      "Built a responsive healthcare business website with a modern interface, product catalog, service information, and customer engagement features, focusing on usability, performance, and a seamless browsing experience across devices.",
+    img: project4,
+    tech: ["React.js", "Tailwind CSS", "JavaScript (ES6+)", "Responsive Web Design"],
+    site: "https://medcarespharmacy.netlify.app/",
+    github: "#",
+    featured: false,
+  },
+
+  // 💤 SIDE PROJECT — placeholder, edit manually later
+  // {
+  //   id: 3,
+  //   title: "New Side Project — Edit Me",
+  //   description: "Placeholder entry for a future side project. Replace title, description, tech, links, and image with real details.",
+  //   img: project1, // TODO: replace with real screenshot import
+  //   tech: ["Tech1", "Tech2"],
+  //   site: "#",
+  //   github: "#",
+  //   featured: false,
+  // },
+
+  {
+    id: 4,
     title: "CRM System",
     description:
       "An enterprise-grade CRM platform for managing customers, employees, tasks, and finances with analytics, automation, and role-based access.",
@@ -55,7 +96,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 2,
+    id: 5,
     title: "WealthX",
     description:
       "A secure finance management system that lets users buy plans, upload proofs, and get real-time admin verification with full-stack integration.",
@@ -73,7 +114,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 3,
+    id: 6,
     title: "Kanban Task Manager",
     description:
       "A drag-and-drop productivity app for managing daily tasks with backend persistence, analytics, and a seamless user interface.",
@@ -84,18 +125,18 @@ const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 7,
     title: "Kodu Frontend",
     description:
       "A responsive, production-ready marketing UI for Kodu campaigns focused on performance, scalability, and modern design principles.",
     img: project8,
-    tech: ["React.js", "Tailwind CSS"],
+    tech: ["React.js", "Tailwind CSS", "JavaScript (ES6+)", "Responsive Web Design"],
     site: "https://koducoding.netlify.app",
     github: "https://github.com/Manish-Yadav77/FrontendKodu",
     featured: false,
   },
   {
-    id: 5,
+    id: 8,
     title: "Coding-Class Next.js",
     description:
       "A simple learning platform built as my first Next.js project. Learned Next.js, TypeScript, and Aceternity UI while creating pages for Home, Courses, and Contact.",
@@ -106,7 +147,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 6,
+    id: 9,
     title: "Infinity Chat",
     description:
       "A full-stack AI chatbot inspired by ChatGPT, featuring Gemini API integration, authentication, chat history, and a modern responsive interface.",
@@ -124,7 +165,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 7,
+    id: 10,
     title: "Weather App",
     description:
       "A clean and elegant weather forecast app fetching live data via API with a fully responsive React UI.",
@@ -135,7 +176,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 8,
+    id: 11,
     title: "Todo App",
     description:
       "A minimalistic and responsive task tracker built with React Hooks and Tailwind CSS for efficient daily planning.",
@@ -146,7 +187,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 9,
+    id: 12,
     title: "BMI Calculator",
     description:
       "An interactive BMI calculator that instantly computes and displays health metrics with clean responsive design.",
@@ -157,7 +198,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 10,
+    id: 13,
     title: "Quotes Generator",
     description:
       "A lightweight and dynamic quote generator that displays random motivational quotes using JavaScript and clean UI.",

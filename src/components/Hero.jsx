@@ -16,7 +16,7 @@ import {
   DiMongodb,
   DiJava,
 } from "react-icons/di";
-import { SiC, SiCplusplus, SiRedux, SiTailwindcss, SiExpress, SiTypescript, SiNextdotjs } from "react-icons/si";
+import { SiC, SiCplusplus, SiRedux, SiTailwindcss, SiExpress, SiTypescript, SiNextdotjs, SiPostgresql } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Hero = ({ id }) => {
@@ -34,6 +34,7 @@ const Hero = ({ id }) => {
     { icon: <DiNodejsSmall className="text-green-500" />, name: "Node.js" },
     { icon: <SiRedux className="text-[#764abc]" />, name: "Redux" },
     { icon: <DiMongodb className="text-green-600" />, name: "MongoDB" },
+    { icon: <SiPostgresql className="text-blue-400" />, name: "PostgreSQL" },
     { icon: <SiExpress className="text-[#303030]" />, name: "Express" },
   ];
 

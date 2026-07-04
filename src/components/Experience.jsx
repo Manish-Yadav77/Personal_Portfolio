@@ -7,13 +7,13 @@ const experiences = [
     company: "RC Gemini",
     period: "April 2025 - Present",
     description:
-      "Worked as a Frontend Developer at RC Gemini, contributing to modern, responsive, and scalable web applications. Although initially onboarded as a UI/UX-focused developer, I leveraged my Full Stack Development background to deliver multiple end-to-end projects using the MERN stack. Collaborated with cross-functional teams to integrate APIs, optimize performance, and ensure seamless user experiences from frontend design to backend functionality.",
+      "Full Stack Developer at RC Gemini, delivering 4 production-ready MERN applications within a 3-member team. Engineered the WealthX platform with QR-based payments, transaction verification, and role-based access, improving completed submissions by 40%. Built responsive React.js interfaces and reusable component systems, cutting development cycle time by 30%. Developed admin dashboards and real-time data workflows, and contributed to internal CRM development with secure JWT authentication and task tracking, increasing team throughput by 30%.",
   },
   {
     company: "Kodu - Powered by Dhurina",
-    period: "2024 - April 2025",
+    period: "October 2024 - April 2025",
     description:
-      "Completed an intensive Full Stack Development program focused on MERN stack architecture, scalable frontend systems, backend APIs, authentication workflows, and real-world application development using React.js, Node.js, Express.js, MongoDB, and TypeScript.",
+      "Completed a Full Stack Development Program + Internship focused on MERN stack architecture, scalable frontend systems, backend APIs, authentication workflows, and real-world application development using React.js, Node.js, Express.js, MongoDB, and TypeScript. Optimized frontend architecture using reusable components, cutting development time by 30% while improving cross-device compatibility, and fixed application-level defects, reducing reported bugs by 15% and improving system performance by 25%.",
   },
 ];
 
