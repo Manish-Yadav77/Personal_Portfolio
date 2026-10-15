@@ -156,15 +156,15 @@ const Contact = ({ id }) => {
                   About <span className="text-purple-400">Me</span>
                 </h3>
                 <p className="text-gray-400 leading-relaxed md:text-lg text-justify">
-                  Full Stack MERN Developer with experience, building scalable SaaS platforms, business automation systems, AI-integrated applications, and production-ready web solutions using React.js, Next.js, Node.js, Express.js, MongoDB, and TypeScript. Worked on real-world CRM, finance, AI chatbot, and pharmacy management systems with focus on performance, responsive UI architecture, API integration, and modern user experience.
+                  Full Stack MERN Developer building multi-tenant SaaS platforms, client-facing financial applications, internal CRM systems, and automated n8n AI workflows. Proficient in React.js, Next.js, Node.js, Express.js, MongoDB, TypeScript, and Razorpay payment integrations. Experienced in delivering production-grade applications, optimizing UI performance, and engineering direct solutions for real-world client needs.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-5">
                 {[
-                  { title: "12+", subtitle: "Projects Completed" },
+                  { title: "15+", subtitle: "Projects Completed" },
                   { title: "Full Stack", subtitle: "Developer" },
-                  { title: "Problem-", subtitle: "Solver" },
+                  { title: "n8n & AI", subtitle: "Automation Builder" },
                 ].map((item, idx) => (
                   <motion.div
                     key={idx}
@@ -193,7 +193,7 @@ const Contact = ({ id }) => {
                 className="flex flex-col gap-4 p-6 md:p-12 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-2xl border border-purple-700/40 shadow-2xl w-full"
               >
                 <p className="text-gray-100 font-bold text-xl mb-2">
-                  Let´s connect!
+                  Let's connect!
                 </p>
 
                 <input

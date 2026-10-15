@@ -14,34 +14,38 @@ import {
   DiReact,
   DiNodejsSmall,
   DiMongodb,
-  DiJava,
 } from "react-icons/di";
-import { SiC, SiCplusplus, SiRedux, SiTailwindcss, SiExpress, SiTypescript, SiNextdotjs, SiPostgresql } from "react-icons/si";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiExpress,
+  SiTypescript,
+  SiNextdotjs,
+  SiPostgresql,
+  SiN8N,
+  SiRazorpay,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Hero = ({ id }) => {
   const techStack = [
-    { icon: <SiC className="text-[#A8B9CC]" />, name: "C" },
-    { icon: <SiCplusplus className="text-[#00599C]" />, name: "C++" },
-    { icon: <DiJava className="text-[#007396]" />, name: "Java" },
-    { icon: <DiHtml5 className="text-orange-600" />, name: "HTML" },
-    { icon: <DiCss3 className="text-blue-600" />, name: "CSS" },
     { icon: <DiJavascript1 className="text-yellow-500" />, name: "JS" },
     { icon: <SiTypescript className="text-blue-600" />, name: "TS" },
     { icon: <DiReact className="text-blue-500" />, name: "React.js" },
     { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
-    { icon: <SiTailwindcss className="text-purple-700" />, name: "Tailwind" },
     { icon: <DiNodejsSmall className="text-green-500" />, name: "Node.js" },
-    { icon: <SiRedux className="text-[#764abc]" />, name: "Redux" },
+    { icon: <SiExpress className="text-gray-400" />, name: "Express" },
     { icon: <DiMongodb className="text-green-600" />, name: "MongoDB" },
     { icon: <SiPostgresql className="text-blue-400" />, name: "PostgreSQL" },
-    { icon: <SiExpress className="text-[#303030]" />, name: "Express" },
+    { icon: <SiN8N className="text-red-500" />, name: "n8n AI" },
+    { icon: <SiRazorpay className="text-blue-500" />, name: "Razorpay" },
+    { icon: <SiTailwindcss className="text-purple-700" />, name: "Tailwind" },
+    { icon: <SiRedux className="text-[#764abc]" />, name: "Redux" },
   ];
 
   return (
-    <section id={id} className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 lg:px-32 bg-gradient-to-b from-gray-950 to-gray-900 overflow-hidden mt-20 lg:mt-0 pb-20 lg:pb-0 ">
+    <section id={id} className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 lg:px-32 bg-gradient-to-b from-gray-950 to-gray-900 overflow-hidden mt-20 lg:mt-0 pb-20 lg:pb-0">
       <div className="grid md:grid-cols-2 gap-12 items-center w-full max-w-[1300px] mt-5 lg:mt-0">
-        {/* Left Side - Text */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,14 +56,14 @@ const Hero = ({ id }) => {
             sequence={[
               "Full Stack MERN Developer",
               1000,
-              "React & Next.js Developer",
+              "React.js & Node.js Engineer",
               1000,
-              "Backend & SaaS Builder",
+              "SaaS & n8n Automation Builder",
               1000,
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-purple-400 text-xl md:text-4xl mb-4"
+            className="font-bold text-purple-400 text-xl md:text-3xl mb-4"
           />
           <motion.h1
             initial={{ opacity: 0 }}
@@ -79,10 +83,9 @@ const Hero = ({ id }) => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 md:text-xl text-base mb-6 max-w-xl"
           >
-            Full Stack MERN Developer focused on building scalable SaaS applications, AI-powered tools, and modern web platforms with real-world business workflows, performance optimization, and production-ready architecture.
+            Full Stack MERN Developer building production-ready SaaS platforms, client-facing financial applications, Razorpay payment flows, and automated n8n AI workflows.
           </motion.p>
 
-          {/* Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -131,7 +134,6 @@ const Hero = ({ id }) => {
           </motion.div>
         </motion.div>
 
-        {/* Right Side - Image */}
         <motion.img
           src={profilepic}
           alt="Manish Yadav"
@@ -143,7 +145,6 @@ const Hero = ({ id }) => {
         />
       </div>
 
-      {/* Tech Stack */}
       <motion.div
         className="mt-16 grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 gap-6 justify-center"
         initial={{ opacity: 0 }}
@@ -159,7 +160,6 @@ const Hero = ({ id }) => {
         ))}
       </motion.div>
 
-      {/* Shiny Effect */}
       <ShinyEffect left={-100} top={50} size={1400} />
     </section>
   );

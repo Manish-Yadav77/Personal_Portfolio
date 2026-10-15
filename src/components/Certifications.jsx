@@ -4,7 +4,6 @@ import Reveal from "./Reveal";
 import {
   AiOutlineLink,
   AiOutlineFilePdf,
-  AiOutlineCloudDownload,
   AiOutlineTrophy,
 } from "react-icons/ai";
 import { BiAward, BiBadgeCheck } from "react-icons/bi";
@@ -14,11 +13,24 @@ import { FaReact, FaAward } from "react-icons/fa";
 const certifications = [
   {
     id: 1,
+    title: "Forward Deployed Engineer (FDE)",
+    issuer: "Scaler",
+    date: "2026",
+    description:
+      "Completed Scaler's FDE program covering end-to-end deployment, production AI workflows, client requirement analysis, and rapid solution prototyping.",
+    type: "certificate",
+    icon: <BiAward size={40} />,
+    color: "from-blue-600 to-indigo-700",
+    verified: true,
+    credentialLink: "https://www.scaler.com/events",
+  },
+  {
+    id: 2,
     title: "Oracle Cloud Infrastructure AI Foundations Associate",
     issuer: "Oracle",
     date: "2024",
     description:
-      "Oracle OCI AI Foundations certified - expertise in cloud native development and AI powered features for fintech and business automation",
+      "Oracle OCI AI Foundations certified - expertise in cloud native development and AI powered features for fintech and business automation.",
     type: "certificate",
     icon: <SiOracle size={40} />,
     color: "from-red-500 to-orange-600",
@@ -26,12 +38,12 @@ const certifications = [
     credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=35E4718E72EB34E1B4BC8D672A79C3ECFBDAFD90CC0471210E83146A545539AE",
   },
   {
-    id: 2,
+    id: 3,
     title: "Deloitte Australia - Data Analytics Job Simulation",
     issuer: "Deloitte Australia",
     date: "2024",
     description:
-      "Completed comprehensive data analytics simulation focusing on business intelligence and data-driven decision making",
+      "Completed comprehensive data analytics simulation focusing on business intelligence and data-driven decision making.",
     type: "certificate",
     icon: <BiAward size={40} />,
     color: "from-green-500 to-emerald-600",
@@ -39,12 +51,12 @@ const certifications = [
     credentialLink: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_iTj4YEJRG6d3yXY6Q_1756885455100_completion_certificate.pdf",
   },
   {
-    id: 3,
+    id: 4,
     title: "Tata - GenAI Powered Data Analytics Job Simulation",
     issuer: "Tata",
     date: "2024",
     description:
-      "Advanced data analytics and AI implementation with focus on GenAI technologies and practical applications",
+      "Advanced data analytics and AI implementation with focus on GenAI technologies and practical applications.",
     type: "certificate",
     icon: <FaAward size={40} />,
     color: "from-blue-500 to-cyan-600",
@@ -52,12 +64,12 @@ const certifications = [
     credentialLink: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_iTj4YEJRG6d3yXY6Q_1756486938090_completion_certificate.pdf",
   },
   {
-    id: 4,
+    id: 5,
     title: "Full Stack Development (1-Year Program)",
     issuer: "Kodu - Powered by Dhurina",
     date: "January 2024 - April 2025",
     description:
-      "Comprehensive MERN stack training with hands-on projects. Built production-grade applications with React, Node.js, Express, and MongoDB",
+      "Comprehensive MERN stack training with hands-on projects. Built production-grade applications with React, Node.js, Express, and MongoDB.",
     type: "certificate",
     icon: <FaReact size={40} />,
     color: "from-purple-500 to-pink-600",
@@ -65,12 +77,12 @@ const certifications = [
     credentialLink: "#",
   },
   {
-    id: 5,
-    title: "Full Stack Development Internship (3-Month)",
+    id: 6,
+    title: "Full Stack Development Internship (6-Month)",
     issuer: "Kodu - Powered by Dhurina",
-    date: "January 2025 - April 2025",
+    date: "October 2024 - April 2025",
     description:
-      "Worked on frontend and full stack application development, reusable UI components, API integration, and responsive web interfaces in collaborative development environments.",
+      "Worked on frontend and full stack application development, reusable UI components, API integration, and responsive web interfaces.",
     type: "certificate",
     icon: <SiMongodb size={40} />,
     color: "from-green-600 to-teal-600",
@@ -78,19 +90,19 @@ const certifications = [
     credentialLink: "#",
   },
   {
-    id: 6,
+    id: 7,
     title: "Advertisement Frontend - Recognition",
     issuer: "Kodu (Powered by Dhurina)",
     date: "April 2025",
     description:
-      "Recognized for outstanding frontend development work and production-ready advertisement application",
+      "Recognized for outstanding frontend development work and production-ready advertisement application.",
     type: "badge",
     icon: <AiOutlineTrophy size={40} />,
     color: "from-yellow-500 to-orange-500",
     verified: false,
   },
   {
-    id: 7,
+    id: 8,
     title: "RC Gemini - Performance Excellence",
     issuer: "RC Gemini",
     date: "May 2025",
@@ -102,12 +114,12 @@ const certifications = [
     verified: false,
   },
   {
-    id: 8,
+    id: 9,
     title: "RC Gemini - Outstanding Contribution",
     issuer: "RC Gemini",
     date: "July 2025",
     description:
-      "Recognized for consistently delivering projects ahead of deadlines and performance-based achievements",
+      "Recognized for consistently delivering projects ahead of deadlines and performance-based achievements.",
     type: "badge",
     icon: <AiOutlineTrophy size={40} />,
     color: "from-pink-500 to-rose-600",
@@ -115,7 +127,7 @@ const certifications = [
   },
 ];
 
-const Certifications = ({id}) => {
+const Certifications = ({ id }) => {
   const [filter, setFilter] = useState("all");
 
   const filteredCerts = certifications.filter((cert) => {
@@ -124,10 +136,7 @@ const Certifications = ({id}) => {
   });
 
   return (
-    <div
-      className="max-w-[1300px] mx-auto p-6 md:p-20 min-h-screen"
-      id={id}
-    >
+    <div className="max-w-[1300px] mx-auto p-6 md:p-20 min-h-screen" id={id}>
       <Reveal>
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
@@ -135,12 +144,10 @@ const Certifications = ({id}) => {
               Certificates & <span className="text-purple-400">Badges</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl">
-              Professional credentials, certifications, and recognition from
-              industry leaders
+              Professional credentials, certifications, and technical program achievements.
             </p>
           </div>
 
-          {/* Filter Buttons */}
           <div className="flex gap-4 mt-6 md:mt-0 flex-wrap justify-center">
             <button
               onClick={() => setFilter("all")}
@@ -206,7 +213,6 @@ const Certifications = ({id}) => {
               whileHover={{ y: -10, scale: 1.02 }}
               className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 group"
             >
-              {/* Verified Badge */}
               {cert.verified && (
                 <div
                   style={{
@@ -230,40 +236,13 @@ const Certifications = ({id}) => {
                 </div>
               )}
 
-              {/* Icon Header with Gradient */}
               <div
                 className={`h-32 bg-gradient-to-br ${cert.color} flex items-center justify-center relative overflow-hidden`}
               >
-                {/* Animated Background */}
-                <motion.div
-                  animate={{
-                    scale: [1, 1.2, 1],
-                    rotate: [0, 180, 360],
-                  }}
-                  transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    background:
-                      "radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%)",
-                  }}
-                />
-
-                <motion.div
-                  whileHover={{ scale: 1.2, rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                  className="text-white relative z-10"
-                >
-                  {cert.icon}
-                </motion.div>
+                <div className="text-white relative z-10">{cert.icon}</div>
               </div>
 
-              {/* Content */}
               <div style={{ padding: "1.5rem" }}>
-                {/* Type Badge */}
                 <div
                   style={{
                     display: "inline-block",
@@ -297,108 +276,23 @@ const Certifications = ({id}) => {
                   {cert.description}
                 </p>
 
-                {/* Action Buttons */}
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "0.5rem",
-                  }}
-                >
+                <div className="flex gap-2">
                   {cert.credentialLink && cert.credentialLink !== "#" && (
                     <a
                       href={cert.credentialLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "0.5rem",
-                        padding: "0.5rem 1rem",
-                        backgroundColor: "#a855f7",
-                        color: "white",
-                        borderRadius: "0.5rem",
-                        fontSize: "0.875rem",
-                        fontWeight: "600",
-                        textDecoration: "none",
-                        transition: "all 0.3s",
-                      }}
-                      className="hover:bg-purple-600 hover:scale-105"
+                      className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded-md hover:bg-purple-700 transition-all"
                     >
-                      <AiOutlineLink size={16} />
-                      View
+                      <AiOutlineLink size={16} /> View Link
                     </a>
                   )}
-
-                  <button
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.5rem",
-                      padding: "0.5rem 1rem",
-                      backgroundColor: "#374151",
-                      color: "white",
-                      borderRadius: "0.5rem",
-                      fontSize: "0.875rem",
-                      fontWeight: "600",
-                      border: "none",
-                      cursor: "pointer",
-                      transition: "all 0.3s",
-                    }}
-                    className="hover:bg-gray-600 hover:scale-105"
-                  >
-                    <AiOutlineFilePdf size={16} />
-                    Details
-                  </button>
                 </div>
               </div>
-
-              {/* Animated Border on Hover */}
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  border: "3px solid transparent",
-                  borderRadius: "1rem",
-                  pointerEvents: "none",
-                  transition: "all 0.3s",
-                }}
-                className="group-hover:border-purple-500 group-hover:shadow-2xl"
-              />
-
-              {/* Shine Effect */}
-              <motion.div
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "200%" }}
-                transition={{ duration: 0.6 }}
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "50%",
-                  height: "100%",
-                  background:
-                    "linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)",
-                  pointerEvents: "none",
-                }}
-              />
             </motion.div>
           </Reveal>
         ))}
       </div>
-
-      {/* No Results Message */}
-      {filteredCerts.length === 0 && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          style={{ textAlign: "center", padding: "5rem 0" }}
-        >
-          <p className="text-gray-400 text-xl">
-            No {filter === "all" ? "" : filter + "s"} found
-          </p>
-        </motion.div>
-      )}      
     </div>
   );
 };

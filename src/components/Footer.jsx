@@ -3,7 +3,7 @@ import { FaGithubSquare, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex flex-row gap-6 text-gray-400 text-4xl">
+    <div className="flex flex-row gap-6 text-gray-400 text-4xl pb-5 ml-5 ">
       <a
         href="https://github.com/Manish-Yadav77"
         target="_blank"

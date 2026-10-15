@@ -1,6 +1,6 @@
 import React from "react";
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiJava, DiGithubBadge } from "react-icons/di";
-import { SiRedux, SiTailwindcss, SiC, SiCplusplus, SiExpress, SiNextdotjs, SiTypescript, SiPostgresql, SiDocker, SiPostman, SiGit, SiJsonwebtokens } from "react-icons/si";
+import { SiRedux, SiTailwindcss, SiC, SiCplusplus, SiExpress, SiNextdotjs, SiTypescript, SiPostgresql, SiDocker, SiPostman, SiGit, SiJsonwebtokens, SiN8N, SiRazorpay, SiOpenai, SiNetlify, SiRender, SiGithubactions } from "react-icons/si";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
@@ -8,36 +8,47 @@ const skills = [
   {
     category: "Frontend",
     technologies: [
-      { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
-      { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
       { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
       { name: "React.js", icon: <DiReact className="text-blue-500" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
       { name: "Redux", icon: <SiRedux className="text-[#764abc]" /> },
       { name: "Tailwind", icon: <SiTailwindcss className="text-purple-700" /> },
+      { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
+      { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
     ],
   },
   {
-    category: "Backend & Databases",
+    category: "Backend & Payments",
     technologies: [
       { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" /> },
       { name: "Express", icon: <SiExpress className="text-gray-400" /> },
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
+      { name: "Razorpay API", icon: <SiRazorpay className="text-blue-500" /> },
       { name: "JWT Auth", icon: <SiJsonwebtokens className="text-pink-500" /> },
       { name: "Java", icon: <DiJava className="text-[#007396]" /> },
-      { name: "C", icon: <SiC className="text-[#A8B9CC]" /> },
       { name: "C++", icon: <SiCplusplus className="text-[#00599C]" /> },
     ],
   },
   {
-    category: "Tools & DevOps",
+    category: "Automation & Tools",
     technologies: [
+      { name: "n8n AI Workflows", icon: <SiN8N className="text-red-500" /> },
       { name: "Git", icon: <SiGit className="text-orange-500" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-400" /> },
       { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
       { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
+    ],
+  },
+  {
+    category: "AI & Deployment",
+    technologies: [
+      { name: "Gemini API", icon: <SiOpenai className="text-blue-400" /> },
+      { name: "NVIDIA NIM API", icon: <SiOpenai className="text-green-500" /> },
+      { name: "CI/CD Actions", icon: <SiGithubactions className="text-blue-500" /> },
+      { name: "Netlify", icon: <SiNetlify className="text-teal-400" /> },
+      { name: "Render", icon: <SiRender className="text-white" /> },
     ],
   },
 ];
@@ -46,12 +57,12 @@ const Skills = ({ id }) => {
   return (
     <section id={id} className="min-h-screen flex flex-col justify-center items-center px-6 md:px-20 bg-gradient-to-b from-gray-950 to-gray-900 py-20">
       <Reveal>
-        <div className="text-center mb-14 ">
+        <div className="text-center mb-14">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-200 mb-4">
             My <span className="text-purple-400">Skills</span>
           </h2>
           <p className="text-gray-400 md:text-lg max-w-3xl mx-auto">
-            Technologies and tools I use to build interactive, scalable, and high-performance web applications.
+            Technologies and workflow automation tools I use to build production applications.
           </p>
         </div>
       </Reveal>
